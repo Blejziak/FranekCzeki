@@ -1,0 +1,41 @@
+# Konfiguracja FranekCzeki (1.20.x+)
+settings:
+  min-amount: 100.0
+  max-amount: 100000000.0
+  tax-percent-per-hour: 3.0
+  max-tax-percent: 90.0
+
+cheque-item:
+  material: PAPER
+  glow: true
+  name: "&a&lCZEK BANKOWY &8(&f#{id}&8)"
+  lore:
+    - "&8» &7Wartosc poczatkowa: &a${amount}"
+    - "&8» &7Podatek czasowy: &c-3% / 1h"
+    - "&8» &7Wystawil: &f{creator}"
+    - "&8» &7Data: &e{date}"
+    - "&8» &7Unikalne ID: &b#{id}"
+    - ""
+    - "&eKliknij PPM, aby zrealizowac czek!"
+
+gui:
+  history-title: "&8Historia Czekow &7(Strona {page})"
+  admin-title: "&8Panel Admina - Czeki &7(Strona {page})"
+
+messages:
+  prefix: "&8[&aCzeki&8] &7"
+  usage-czek: "&cPoprawne uzycie: &7/czek <kwota> &club &7/wyplac <kwota>"
+  invalid-amount: "&cPodana kwota jest nieprawidlowa!"
+  min-amount: "&cMinimalna kwota czeku wynosi &a${min}&c!"
+  max-amount: "&cMaksymalna kwota czeku wynosi &a${max}&c!"
+  not-enough-money: "&cNie posiadasz tyle pieniedzy na koncie! Brakuje Ci &e${missing}&c."
+  inventory-full: "&cTwoj ekwipunek jest pelny!"
+  cheque-created: "&aStworzono czek &f#{id} &ana kwote &2${amount}&a! &8(&7Podatek: &c-3%/1h&8)"
+  cheque-redeemed: "&aZrealizowano czek &f#{id}&a! Otrzymano &2${current} &8(&7Poczatkowo: &f${initial}&7, podatek: &c-{tax}%&8)"
+  cheque-already-used: "&cTen czek (#{id}) zostal juz wczesniej zrealizowany! (Blokada kopiowania)"
+  cheque-voided: "&cWartosc tego czeku (#{id}) zostala usunieta przez administratora!"
+  cheque-invalid: "&cTen czek nie istnieje w bazie danych lub jest uszkodzony!"
+  admin-voided-cheque: "&eUsunieto wartosc czeku &f#{id} &egracza &f{creator}&e!"
+  admin-cleared-history: "&aPomyslnie wyczyszczono cala historie czekow!"
+  no-permission: "&cNie masz uprawnien do tej komendy!"
+  reloaded: "&aPomyslnie przeladowano plik config.yml!"

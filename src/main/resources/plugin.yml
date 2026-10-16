@@ -1,0 +1,45 @@
+name: FranekCzeki
+version: '1.0'
+main: dev.franek.czeki.FranekCzekiPlugin
+api-version: '1.20'
+authors: [ franekk ]
+description: Plugin made by franekk - https://github.com/Blejziak
+website: https://github.com/Blejziak
+depend: [ Vault ]
+
+commands:
+  czek:
+    description: Tworzy czek na wybrana kwote
+    usage: /czek <kwota>
+  wyplac:
+    description: Wyplaca kwote do czeku
+    usage: /wyplac <kwota>
+  historiaczeki:
+    description: Otwiera GUI historii wszystkich czekow
+    usage: /historiaczeki
+  aczek:
+    description: Panel administracyjny czekow
+    usage: /aczek <gui|historia|clear|reload>
+  historiaczek-clear:
+    description: Czysci cala historie czekow
+    usage: /historiaczek-clear
+
+permissions:
+  franek.czek.use:
+    description: Pozwala tworzyc i realizowac czeki
+    default: true
+  tojak1cper.czek.use:
+    description: Pozwala tworzyc i realizowac czeki
+    default: true
+  franek.czek.admin:
+    description: Dostep do panelu administracyjnego czekow
+    default: op
+  tojak1cper.czek.admin:
+    description: Dostep do panelu administracyjnego czekow
+    default: op
+  franek.czek.adminclear:
+    description: Pozwala czyscic historie czekow
+    default: op
+  tojak1cper.czek.adminclear:
+    description: Pozwala czyscic historie czekow
+    default: op
