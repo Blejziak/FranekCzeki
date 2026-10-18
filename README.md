@@ -21,8 +21,8 @@ Kazdy stworzony czek ma wlasne ID zapisane w przedmiocie. Jezeli gracz trzyma cz
 
 ## Uprawnienia
 
-- **Gracz**: `tojak1cper.czek.use` / `franek.czek.use` (domyslnie dla kazdego, nie wymaga nadawania)
-- **Admin**: `tojak1cper.czek.admin` / `franek.czek.admin` oraz `tojak1cper.czek.adminclear` / `franek.czek.adminclear` (albo `OP`)
+- **Gracz**: `franek.czek.use` (domyslnie dla kazdego, nie wymaga nadawania)
+- **Admin**: `franek.czek.admin` oraz `franek.czek.adminclear` (albo `OP`)
 
 ## Config
 
