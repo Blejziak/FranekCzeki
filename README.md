@@ -6,10 +6,6 @@ Plugin na czeki bankowe pod ekonomie Vault z systemem podatku czasowego, unikaln
 
 Kazdy stworzony czek ma wlasne ID zapisane w przedmiocie. Jezeli gracz trzyma czek i nie zrealizuje go przez godzine, wartosc czeku spada o **3% co kazda pelna godzine** (np. z `$100,000` robi sie `$97,000`). W panelu admina mozna przegladac czeki, zerowac wartosc konkretnego czeku jednym kliknieciem albo wyczyscic cala historie.
 
-## Podglad w grze
-
-![showcase](assets/showcase.png)
-
 ## Komendy
 
 | Komenda | Co robi |
